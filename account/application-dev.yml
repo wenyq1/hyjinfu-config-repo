@@ -28,5 +28,13 @@ spring:
 #        enabled: true
 #        service-id: 'config-server'
 #      fail-fast: true
-  zipkin:
-    base-url: 'http://zipkin_server:9411/'
+encrypt:
+  key: '*&3loa#@9no_0*(!'
+mybatis:
+#  type-handlers-package: 'account.server.domain.type.handler'
+  mapper-locations: 'classpath:mapper/*Mapper.xml'
+  type-aliases-package: 'com.hyjinfu.accountServer.domain'
+flyway:
+#  enabled: true
+#  validate-on-migrate: false
+  baseline-on-migrate: true
