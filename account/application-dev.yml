@@ -29,7 +29,7 @@ spring:
 #        service-id: 'config-server'
 #      fail-fast: true
 encrypt:
-  key: '222222222222'
+  key: '111111111'
 mybatis:
 #  type-handlers-package: 'account.server.domain.type.handler'
   mapper-locations: 'classpath:mapper/*Mapper.xml'
