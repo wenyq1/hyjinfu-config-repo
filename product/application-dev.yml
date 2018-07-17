@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: 111111
+    url: 'jdbc:mysql://localhost:3306/hyjinfu.account?useLegacyDatetimeCode=false&serverTimezone=Asia/Hong_Kong&useSSL=false'
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+
+mybatis:
+  mapper-locations: 'classpath:mapper/*Mapper.xml'
+  type-aliases-package: 'com.hyjinfu.accountServer.domain'
+flyway:
+  baseline-on-migrate: true
